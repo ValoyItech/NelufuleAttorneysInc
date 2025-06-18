@@ -44,6 +44,30 @@
         .nav-link:hover::after {
             width: 100%;
         }
+
+        <style>
+@keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-left {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade-in-right {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+.animate-fade-in-up {
+    animation: fade-in-up 1.2s ease-out forwards;
+}
+.animate-fade-in-left {
+    animation: fade-in-left 1.2s ease-out forwards;
+}
+.animate-fade-in-right {
+    animation: fade-in-right 1.2s ease-out forwards;
+}
+
     </style>
 </head>
 <body class="bg-gray-50">
@@ -127,27 +151,32 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient text-white py-20 md:py-32">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">Professional Legal Services You Can Trust</h1>
-                <p class="text-lg md:text-xl mb-8">Nelufule Attorneys Inc provides expert legal counsel with integrity, professionalism, and a commitment to excellence.</p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#contact" class="bg-gold-600 hover:bg-gold-700 text-white px-8 py-3 rounded-lg text-center font-medium transition duration-300">
-                        <i class="fas fa-envelope mr-2"></i> Get a Consultation
-                    </a>
-                    <a href="#services" class="bg-transparent hover:bg-white hover:text-blue-900 border-2 border-white px-8 py-3 rounded-lg text-center font-medium transition duration-300">
-                        <i class="fas fa-briefcase mr-2"></i> Our Services
-                    </a>
-                </div>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative">
-                    <img src="images/hero.jpg" alt="Law books and gavel" class="rounded-lg shadow-xl w-full max-w-md">
-                </div>
+<section id="home" class="hero-gradient text-white py-20 md:py-32">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-left hover:transform hover:scale-105 transition-transform duration-500">
+                Your Trusted Partner in Legal Excellence
+            </h1>
+            <p class="text-lg md:text-xl mb-8 animate-fade-in-right hover:transform hover:scale-105 transition-transform duration-500">
+                Nelufule Attorneys Inc delivers tailored legal solutions with dedication, precision, and a client-first approach.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="bg-gold-600 hover:bg-gold-700 text-white px-8 py-3 rounded-lg text-center font-medium transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Get a Consultation
+                </a>
+                <a href="#services" class="bg-transparent hover:bg-white hover:text-blue-900 border-2 border-white px-8 py-3 rounded-lg text-center font-medium transition duration-300">
+                    <i class="fas fa-briefcase mr-2"></i> Our Services
+                </a>
             </div>
         </div>
-    </section>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative">
+                <img src="images/hero.jpg" alt="Law books and gavel"
+                     class="rounded-lg shadow-xl w-full max-w-md transition-transform duration-1000 ease-in-out transform hover:scale-105 hover:rotate-1 animate-fade-in-up">
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
@@ -523,8 +552,8 @@
                     <h3 class="heading-font text-xl font-bold mb-6">About Us</h3>
                     <p class="text-gray-300 mb-4">Nelufule Attorneys Inc is a full-service law firm committed to providing exceptional legal representation with integrity and professionalism.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
-                            <i class="fab fa-facebook-f"></i>
+                        <a href="https://wa.me/27815940620" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                         <a href="https://www.tiktok.com/@nelufule.attorneys" class="text-gray-300 hover:text-white transition duration-300">
                             <i class="fab fa-tiktok"></i>
